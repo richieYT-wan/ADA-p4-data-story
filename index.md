@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## ADA P4 - Creative extension
 
 You can use the [editor on GitHub](https://github.com/richieYT-wan/ADA-p4-data-story/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
