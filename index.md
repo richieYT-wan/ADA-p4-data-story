@@ -102,7 +102,6 @@ Reflecting real life behaviour, positive (i.e. friendly) people may have overall
 We as measures, we took once again the degree, and the also the average neighbor degree for each sub networks. The average neighbor degree returns the average degree of the neighborhood of each node. 
 
 |----------Slashdot : Reciprocal----------|
-|-----------------------------------------|
 |                  | Positive |  Negative |
 |:-----------------|---------:|----------:|
 |Nodes             | 20933    |  3682     |
