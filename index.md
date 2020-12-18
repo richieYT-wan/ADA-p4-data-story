@@ -1,7 +1,5 @@
 # Signed Networks in Social Media
 
-Related paper : J. Leskovec, D. Huttenlocher, and J. Kleinberg, ‘Signed networks in social media’, in Proceedings of the 28th international conference on Human factors in computing systems
-
 ## Structure in social media, _**birds of a feather...**_
 
 Most of the current popular social networks only showcase positive links. Think of Facebook, Instagram, Twitter, where one can like, befriend, follow, etc., but never actually "dislike". In real life, though, relationships can be a little more complex. People can dislike each other, leading to some form of *distance*, not only on a personal level but also on a group level. 
@@ -24,7 +22,10 @@ All datasets are roughly in the same format, i.e. an edgelist with columns `"Fro
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/richieYT-wan/ADA-p4-data-story/main/figs/troll.png" width="350" />
+ <br>
+    <em>source:https://cis.cornell.edu/internet-trolls-are-made-not-born-cis-researchers-say</em>
 </p>
+
 
 Now of course, anybody can vote the way they can. There have been countless accounts of trolls on the internet, and you should be careful to _not feed them_. Nonetheless, social theories still apply and we may expect trolls to be outliers rather than the norm. In the context of our dataset, trolls may simply refer to people who give negative votes, or links, to everybody, with no apparent reason other. Despite that, some social theories still apply. For example, the theory of balance, proposed by [F. Harary and D. Cartwright](https://en.wikipedia.org/wiki/Social_balance_theory), which considers the way triangles (relationships between 3 nodes) can be signed. This theory suggests that the most common types of triangles are three mutual friends (3 `positive edges`), or two friends with a common enemy (two `negative` and one `positive edges`).
 
@@ -137,3 +138,9 @@ Visually, we notice that there are many more green edges than red edges, as expl
 
 In conclusion, birds of a green feather flock together, when birds with sad, red feathers get separated from the pack !
 
+
+### References
+
+Related paper : 
+- J. Leskovec, D. Huttenlocher, and J. Kleinberg, ‘Signed networks in social media’, in Proceedings of the 28th international conference on Human factors in computing systems
+- Ciotti, Valerio. Positive and negative connections and homophily in complex networks. Diss. Queen Mary University of London, 2018.
