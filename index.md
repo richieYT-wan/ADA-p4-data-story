@@ -2,7 +2,7 @@
 
 Related paper : J. Leskovec, D. Huttenlocher, and J. Kleinberg, ‘Signed networks in social media’, in Proceedings of the 28th international conference on Human factors in computing systems
 
-## Structure in social media, [*birds of a feather...*](## Homophily, *... flock together!*)
+## Structure in social media, [*birds of a feather...*](https://github.com/richieYT-wan/ADA-p4-data-story/blob/gh-pages/index.md#homophily--flock-together)
 
 Now you may wonder what social media has to do with birds, right? Buckle
 
