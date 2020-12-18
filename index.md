@@ -51,8 +51,8 @@ But now then, how connected is our network? If we are naïve, for starter, we ca
 |Avg. per node  | Epinions |  Slashdot | Wikipedia |
 |:--------------|---------:|----------:|----------:|
 |Avg. # of edges| 6.38     |  6.69     |   14.57   |
-|Avg. % of +edge| 5.44     | 5.18      |  11.48    |
-|Avg. % of -edge| 0.94     |   1.52    |  3.089    |
+|Avg. # of +edge| 5.44     | 5.18      |  11.48    |
+|Avg. # of -edge| 0.94     |   1.52    |  3.089    |
 
 The Wikipedia dataset has more than twice as many average number of edges per node. This is due to the fact that edges can't be formed at will, since they are the results of voting on someone nominated for an election. On the other hand, Epinions and Slashdot have similar average number of edges per node, given that any user can form an edge towards any other user, though Epinions has a bigger share of positive links than Slashdot. 
 
