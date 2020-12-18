@@ -2,7 +2,7 @@
 
 Related paper : J. Leskovec, D. Huttenlocher, and J. Kleinberg, ‘Signed networks in social media’, in Proceedings of the 28th international conference on Human factors in computing systems
 
-## Structure in social media, `birds of a feather...`%*](https://github.com/richieYT-wan/ADA-p4-data-story/blob/gh-pages/index.md#homophily--flock-together)
+## Structure in social media, `birds of a feather...`
 
 Most of the current popular social networks only showcase positive links. Think of Facebook, Instagram, Twitter, where one can like, befriend, follow, etc., but never actually "dislike". In real life, though, relationships can be a little more complex. People can dislike each other, leading to some form of *distance*, not only on a personal level but also on a group level. 
 
@@ -80,7 +80,7 @@ Without counting the `sign`, we see that the degree distribution follow a power 
 |Max Deg. (Not)  | 3622     |  2557     | 1167      |
 
 
-## Homophily, `... flock together!`%*](https://github.com/richieYT-wan/ADA-p4-data-story/blob/gh-pages/index.md#structure-in-social-media-birds-of-a-feather)
+## Homophily, `... flock together!`
 
 Given the size of Epinions and the nature of the Wikipedia dataset, we decided to focus on Slashdot for this part. 
 
