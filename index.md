@@ -91,8 +91,10 @@ We first take nodes that have reciprocated edges with the same sign between them
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/richieYT-wan/ADA-p4-data-story/main/figs/reciprocated_net.png" width="450" />
+ <br>
+    <em>source:Taken from Ciotti, Valerio. Positive and negative connections and homophily in complex networks. Diss. Queen Mary University of London, 2018.</em>
 </p>
-Taken from Ciotti, Valerio. Positive and negative connections and homophily in complex networks. Diss. Queen Mary University of London, 2018.
+
 
 Reflecting real life behaviour, positive (i.e. friendly) people may have overall more connections, and be densely connected between them, whereas negative people (i.e. with more negative edges) will tend to be separated from these densely packed clusters, and overall less connected. Let's take a peak at the degree and neighbour degree for both the positive and negative reciprocated sub-network : 
 
