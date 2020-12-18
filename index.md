@@ -29,13 +29,13 @@ Now of course, anybody can vote the way they can. There have been countless acco
 
 You can take our word for it! Or should probably take a glance at the statistics recaps computed for each of the 3 datasets below :
 <p align="center">
-|        |         Epinions |         Slashdot |   Wikipedia |
-|:-------|-----------------:|-----------------:|------------:|
-| Nodes  | 131828           |  82140           |      7118   |
-| Edges  | 841372           | 549202           |    103747   |
-| +edge  |     85.3         |     77.4         |        78.8 |
-| -edge  |     14.7         |     22.6         |        21.2 |
-| Triads |      13317672    |      1508105     |    790532   |
+|        | Epinions |  Slashdot | Wikipedia |
+|:-------|---------:|----------:|----------:|
+| Nodes  | 131828   |  82140    |    7118   |
+| Edges  | 841372   | 549202    |  103747   |
+| +edge  |     85.3 |    77.4   |      78.8 |
+| -edge  |     14.7 |    22.6   |      21.2 |
+| Triads | 13317672 |  1508105  |  790532   |
 </p>
 
 `+edge` and `-edge` show the proportion of positive and negative edges within the network. This Indeed, our networks are all made up of over 77% positive edges. 
