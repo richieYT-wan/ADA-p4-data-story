@@ -141,8 +141,7 @@ Visually, we notice that there are many more green edges than red edges, as expl
 Now, we want verify all this by clustering the undirected graph into communities using Leiden clustering, which is an improved version of Louvain clustering which optimises modularity. From keep the largest communities with over 1000 nodes. Within thoseand check if they follow the rules previously describe : i.e., we have many dense positive edges, with small amounts of negative edges. 
 
 <p float = "left">
-  <img src= https://raw.githubusercontent.com/richieYT-wan/ADA-p4-data-story/main/figs/labelled_graph_communities_2.png width="405" /> 
-  <img src= https://raw.githubusercontent.com/richieYT-wan/ADA-p4-data-story/main/figs/labelled_graph_communities_3.png width="405" />
+  <img src = https://raw.githubusercontent.com/richieYT-wan/ADA-p4-data-story/main/figs/clusters.png width="405" /> 
 </p>
 
 As said previously, those clusters contains nodes that are densely connected with many positive edges, while negative edge are sparser, and mostly on the outside.
