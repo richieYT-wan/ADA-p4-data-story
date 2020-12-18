@@ -25,9 +25,13 @@ All datasets are roughly in the same format, i.e. an edgelist with columns `"Fro
 <img src="https://raw.githubusercontent.com/richieYT-wan/ADA-p4-data-story/main/figs/troll.png" width="350" />
 </p>
 
-Now of course, anybody can vote the way they can. There have been countless accounts of trolls on the internet, and you should be careful to _not feed them_. Nonetheless, social theories still apply and we may expect trolls to be outliers rather than the norm. In the context of our dataset, trolls may simply refer to people who give negative votes, or links, to everybody, with no apparent reason other. Despite that, some social theories still apply. For example, the theory of balance, proposed by [F. Harary and D. Cartwright](https://en.wikipedia.org/wiki/Social_balance_theory), which considers the way triangles (relationships between 3 nodes) can be signed. This theory suggests that the most common types of triangles are three mutual friends (3 `positive edges`), or two friends with a common enemy (two `negative` and one `positive edges`). Overall, this theory combined with the social nature of humans, which tend to form communities and connect (_as opposed to Trolls who only want despair!_), results in an overall trend to have higher frequencies of `positive edges` vs `negative edges` in a given social network.
+Now of course, anybody can vote the way they can. There have been countless accounts of trolls on the internet, and you should be careful to _not feed them_. Nonetheless, social theories still apply and we may expect trolls to be outliers rather than the norm. In the context of our dataset, trolls may simply refer to people who give negative votes, or links, to everybody, with no apparent reason other. Despite that, some social theories still apply. For example, the theory of balance, proposed by [F. Harary and D. Cartwright](https://en.wikipedia.org/wiki/Social_balance_theory), which considers the way triangles (relationships between 3 nodes) can be signed. This theory suggests that the most common types of triangles are three mutual friends (3 `positive edges`), or two friends with a common enemy (two `negative` and one `positive edges`).
 
-You can take our word for it! Or should probably take a glance at the statistics recaps computed for each of the 3 datasets below :
+Overall, this theory combined with the social nature of humans, which tend to form communities and connect (_as opposed to Trolls who only want despair!_), results in a trend to have higher frequencies of `positive edges` rather than `negative edges` in a given social network.
+
+**You can take our word for it!**
+_Or you should probably take a glance at the statistics recaps computed for each of the 3 datasets below_ :
+
 
 |        | Epinions |  Slashdot | Wikipedia |
 |:-------|---------:|----------:|----------:|
@@ -37,10 +41,31 @@ You can take our word for it! Or should probably take a glance at the statistics
 | -edge  |     14.7 |    22.6   |      21.2 |
 | Triads | 13317672 |  1508105  |  790532   |
 
-UPDATED TEST
-`+edge` and `-edge` show the proportion of positive and negative edges within the network. This Indeed, our networks are all made up of over 77% positive edges. 
 
-But now then, how connected is our network? We can take a look at the average number of edges per node :
+`+edge` and `-edge` show the proportion of positive and negative edges within the network. As mentioned above, our networks are all made up majoritarily of `+edges`, with over 77% positive edges. 
 
+But now then, how connected is our network? If we are naïve, for starter, we can take a look at the average number of edges per node :
 
+|Avg. per node  | Epinions |  Slashdot | Wikipedia |
+|:--------------|---------:|----------:|----------:|
+|Avg. # of edges| 6.38     |  6.69     |   14.57   |
+|Avg. % of +edge| 5.44     | 5.18      |  11.48    |
+|Avg. % of -edge| 0.94     |   1.52    |  3.089    |
 
+The Wikipedia dataset has more than twice as many average number of edges per node. This is due to the fact that edges can't be formed at will, since they are the results of voting on someone nominated for an election. On the other hand, Epinions and Slashdot have similar average number of edges per node, given that any user can form an edge towards any other user, though Epinions has a bigger share of positive links than Slashdot. 
+
+But averages don't tell us much about the actual structure of the networks. For example, everyone may have on average 6 to more connections, with a very few subset that are **sparsely** connected (_think of a normal distribution with minimal standard deviation!_). Or, on the other hand, there may be a subset of users with an overwhelmingly large amount of connections (_surely, these must be very popular_), with another subset of users who have close to no edges such as _casual users_.
+
+With a slightly less naïve approach, we can take a look at the aforementioned distributions:
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/richieYT-wan/ADA-p4-data-story/main/figs/epi.png" width="650" />
+</p>
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/richieYT-wan/ADA-p4-data-story/main/figs/slash.png" width="650" />
+</p>
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/richieYT-wan/ADA-p4-data-story/main/figs/wiki.png" width="650" />
+</p>
