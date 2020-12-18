@@ -90,7 +90,7 @@ Now, what is this about _Birds of a feather_ that _flock together_ ? In network 
 We first take nodes that have reciprocated edges with the same sign between them, and separate the network in positive and negative reciprocated sub-networks. By viewing reciprocated edges, effectively view the networks in an undirected view rather than directed. Coincidentally, this view aligns better with the social theory of _structural balance_ as outlined by the authors of the paper ‘Signed networks in social media’.
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/richieYT-wan/ADA-p4-data-story/main/figs/reciprocated_net.png" width="450" />
+<img src="https://raw.githubusercontent.com/richieYT-wan/ADA-p4-data-story/main/figs/reciprocated_net.png" width="650" />
  <br>
     <em>source:Taken from Ciotti, Valerio. Positive and negative connections and homophily in complex networks. Diss. Queen Mary University of London, 2018.</em>
 </p>
@@ -99,7 +99,7 @@ We first take nodes that have reciprocated edges with the same sign between them
 Reflecting real life behaviour, positive (i.e. friendly) people may have overall more connections, and be densely connected between them, whereas negative people (i.e. with more negative edges) will tend to be separated from these densely packed clusters, and overall less connected. Let's take a peak at the degree and neighbour degree for both the positive and negative reciprocated sub-network : 
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/richieYT-wan/ADA-p4-data-story/main/figs/POSNEG.png" width="450" />
+<img src="https://raw.githubusercontent.com/richieYT-wan/ADA-p4-data-story/main/figs/POSNEG.png" width="650" />
 </p>
 
 |                  | Positive |  Negative |
@@ -111,7 +111,7 @@ Reflecting real life behaviour, positive (i.e. friendly) people may have overall
 
 As metric, we took once again the degree, adding also the average neighbor degree for each sub networks. The average neighbor degree returns the average degree of the neighborhood of each node. It appears that both the degree and average neighbour degree are shifted to the right and overall higher. But given the stark difference between the number of nodes in each subgraph, it might be better to look at densities instead to confirm this : 
 <p align="center">
-<img src="https://raw.githubusercontent.com/richieYT-wan/ADA-p4-data-story/main/figs/densities.png" width="450" />
+<img src="https://raw.githubusercontent.com/richieYT-wan/ADA-p4-data-story/main/figs/densities.png" width="650" />
 </p>
 
 Comparing the densities reveal that the distribution of the positive subset has a much heavier right-tail than the one for the negative subset. Effectively, this means that the positive sub-set is more densely connected, and also connected to other nodes that have larger degree. This also means that the popular kids at school, tend to have have more friends who are also popular and are more likely to connect to other people that also have more friends ! 
@@ -119,7 +119,7 @@ Comparing the densities reveal that the distribution of the positive subset has 
 We can check another metric using the average degree of the nearest neighbour : 
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/richieYT-wan/ADA-p4-data-story/main/figs/knn.png" width="450" />
+<img src="https://raw.githubusercontent.com/richieYT-wan/ADA-p4-data-story/main/figs/knn.png" width="650" />
 </p>
 
 This graph shows the concept of assortativity which is the preference for a node to be linked to another node that has similar behavior. Here, the measure of similarity that we use is the degree of connections of a node. We observe that for the positive subnetwork, the degree correlation between nodes increases, meaning that nodes which connects with a lot of others nodes are connected with nodes that do the same, behave similarly. Thus, the positive network is assortative by degree. On the other hand, for the negative subnetwork, we observe that knn does not increase meaning that there is no degree correlation between these nodes. They don't behave similarly.
@@ -133,7 +133,7 @@ This graph shows the concept of assortativity which is the preference for a node
 
 In the following graph, we took the largest connected component of the total reciprocal network. Then we chose nodes that have degrees in the top-95 percentile. We marked in green the `positive edges` and in red the `negative edges`.
 <p align="center">
-<img src="https://raw.githubusercontent.com/richieYT-wan/ADA-p4-data-story/main/figs/labelled_graph_14.png" width="450" />
+<img src="https://raw.githubusercontent.com/richieYT-wan/ADA-p4-data-story/main/figs/labelled_graph_14.png" width="650" />
 </p>
 
 Visually, we notice that there are many more green edges than red edges, as explained above due to the difference in degree of nodes for both sub-networks. On top of that, we see that the positive subset is more densely connected than the negative subset.
