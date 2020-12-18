@@ -16,14 +16,19 @@ Some social medias, though, allow the formation of negative links. In our case, 
 
 3. The last one is from [Wikipedia](https://snap.stanford.edu/data/wiki-Elec.html), more specifically Wikipedia election data. Some Wikipedia users can be elected to become administrator, granting them additional rights and access. A user can be nominated for election through a Request for Adminship (RfA), and a public voting ensues. The sign of the edge directly relates to the vote casted on a given election. Given the nature of this dataset, there are many _one-way_ edges, in the sense that since one must be nominated for election to receive votes, many edges are not reciprocated. 
 
-## Sociology ?
+All datasets are roughly in the same format, i.e. an edgelist with columns `"FromNodeId", "ToNodeId", "Sign"` which represents all the connections in their respective network.
 
+
+## Sociology : putting the **social** in social networks
+
+<p align="center">
 <img src="https://raw.githubusercontent.com/richieYT-wan/ADA-p4-data-story/main/figs/troll.png" width="350" />
+</p>
 
 Now of course, anybody can vote the way they can. There have been countless accounts of trolls on the internet, and you should be careful to _not feed them_. Nonetheless, social theories still apply and we may expect trolls to be outliers rather than the norm. In the context of our dataset, trolls may simply refer to people who give negative votes, or links, to everybody, with no apparent reason other. Despite that, some social theories still apply. For example, the theory of balance, proposed by [F. Harary and D. Cartwright](https://en.wikipedia.org/wiki/Social_balance_theory), which considers the way triangles (relationships between 3 nodes) can be signed. This theory suggests that the most common types of triangles are three mutual friends (3 `positive edges`), or two friends with a common enemy (two `negative` and one `positive edges`). Overall, this theory combined with the social nature of humans, which tend to form communities and connect (_as opposed to Trolls who only want despair!_), results in an overall trend to have higher frequencies of `positive edges` vs `negative edges` in a given social network.
 
-You can take our word for it, or look at the statistics recaps below for each of the 3 datasets:
-
+You can take our word for it! Or should probably take a glance at the statistics recaps computed for each of the 3 datasets below :
+<p align="center">
 |        |         Epinions |         Slashdot |   Wikipedia |
 |:-------|-----------------:|-----------------:|------------:|
 | Nodes  | 131828           |  82140           |      7118   |
@@ -31,7 +36,11 @@ You can take our word for it, or look at the statistics recaps below for each of
 | +edge  |     85.3         |     77.4         |        78.8 |
 | -edge  |     14.7         |     22.6         |        21.2 |
 | Triads |      13317672    |      1508105     |    790532   |
+</p>
 
-	13317672	1508105	790532
+`+edge` and `-edge` show the proportion of positive and negative edges within the network. This Indeed, our networks are all made up of over 77% positive edges. 
+
+But now then, how connected is our network? We can take a look at the average number of edges per node :
+
 
 
