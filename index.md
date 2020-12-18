@@ -138,11 +138,20 @@ In the following graph, we took the largest connected component of the total rec
 
 Visually, we notice that there are many more green edges than red edges, as explained above due to the difference in degree of nodes for both sub-networks. On top of that, we see that the positive subset is more densely connected than the negative subset.
 
-In conclusion, birds of a green feather flock together, when birds with sad, red feathers get separated from the pack !
+Now, we want verify all this by clustering the undirected graph into communities using Leiden clustering, which is an improved version of Louvain clustering which optimises modularity. From keep the largest communities with over 1000 nodes. Within thoseand check if they follow the rules previously describe : i.e., we have many dense positive edges, with small amounts of negative edges. 
 
+<p float="left">
+  <img src= https://raw.githubusercontent.com/richieYT-wan/ADA-p4-data-story/main/figs/labelled_graph_communities_2.png width="300" /> 
+  <img src= https://raw.githubusercontent.com/richieYT-wan/ADA-p4-data-story/main/figs/labelled_graph_communities_3.png width="300" />
+</p>
+
+As said previously, those clusters contains nodes that are densely connected with many positive edges, while negative edge are sparser, and mostly on the outside.
+
+In conclusion, it would appear that birds of a green feather flock together, when birds with sad, red feathers get separated from the pack !
 
 ### References
 
 Related paper : 
 - J. Leskovec, D. Huttenlocher, and J. Kleinberg, ‘Signed networks in social media’, in Proceedings of the 28th international conference on Human factors in computing systems
 - Ciotti, Valerio. Positive and negative connections and homophily in complex networks. Diss. Queen Mary University of London, 2018.
+- Traag, V.A., Waltman, L. & van Eck, N.J. From Louvain to Leiden: guaranteeing well-connected communities. Sci Rep 9, 5233 (2019). 
