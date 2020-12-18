@@ -84,12 +84,36 @@ Without counting the `sign`, we see that the degree distribution follow a power 
 
 Given the size of Epinions and the nature of the Wikipedia dataset, we decided to focus on Slashdot for this part. 
 
-Now, what is this about _Birds of a feather_ that _flock together_ ? In network science homophily is the behaviour of associating (i.e. connecting) with people that are **similar**. This similarity can come from demographics, interests, etc. 
+Now, what is this about _Birds of a feather_ that _flock together_ ? In network science homophily is the behaviour of associating (i.e. connecting) with people that are **similar**. This similarity can come from demographics, interests, etc. Such a group may have overall similar behaviour when creating edges, for example.
 
-We first take nodes that have reciprocated edges with the same sign between them, and separate the network in positive and negative reciprocated sub-networks.
+We first take nodes that have reciprocated edges with the same sign between them, and separate the network in positive and negative reciprocated sub-networks. By viewing reciprocated edges, effectively view the networks in an undirected view rather than directed. Coincidentally, this view aligns better with the social theory of _structural balance_ as outlined by the authors of the paper ‘Signed networks in social media’.
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/richieYT-wan/ADA-p4-data-story/main/figs/reciprocated_net.png" width="450" />
 </p>
-Taken from _Ciotti, Valerio. Positive and negative connections and homophily in complex networks. Diss. Queen Mary University of London, 2018._
+Taken from Ciotti, Valerio. Positive and negative connections and homophily in complex networks. Diss. Queen Mary University of London, 2018.
+
+Reflecting real life behaviour, positive (i.e. friendly) people may have overall more connections, and be densely connected between them, whereas negative people (i.e. with more negative edges) will tend to be separated from these densely packed clusters, and overall less connected. Let's take a peak at the degree and neighbour degree for both the positive and negative reciprocated sub-network : 
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/richieYT-wan/ADA-p4-data-story/main/figs/POSNEG.png" width="450" />
+</p>
+
+We as measures, we took once again the degree, and the also the average neighbor degree for each sub networks. The average neighbor degree returns the average degree of the neighborhood of each node. 
+
+|----------Slashdot : Reciprocal----------|
+|-----------------------------------------|
+|                  | Positive |  Negative |
+|:-----------------|---------:|----------:|
+|Nodes             | 20933    |  3682     |
+|Largest c.c.      | 15947    |  3016     |
+|Max Deg.          | 362      |  66       |
+|Max Avg. Nbh. Deg.| 362      |  66       |
+
+Given the stark difference between the number of nodes, it might be better to look at densities instead : 
+
+**INSERT DENSITY GRAPH HERE**
+
+talk about cluster and network graphs here
+say that positive more densely connectec betweenthem,
 
