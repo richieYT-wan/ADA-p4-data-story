@@ -71,7 +71,7 @@ With a slightly less naïve approach, we look for the node degree distributions 
 <img src="https://raw.githubusercontent.com/richieYT-wan/ADA-p4-data-story/main/figs/wiki.png" width="650" />
 </p>
 
-Without counting the `sign`, we see that the degree distribution follow a power law. It becomes evident that most users have very few connections, suggesting the networks may be sparsely connected. We verify this by looking at the checking the density of the network which are all below 5e-3. By taking the sign into account for calculating the degree, we see that the distribution is mostly skewed towards the right, showcasing once again the major proportion of `positive edges`. 
+Without counting the `sign`, we see that the degree distribution follow a power law. It becomes evident that most users have very few connections, suggesting the networks may be sparsely connected. We verify this by looking at the checking the density of the network which are all below 5e-3. By taking the sign into account for calculating the degree, we see that the distribution is mostly skewed towards the right, showcasing once again the major proportion of `positive edges`. Interestingly, for Wikipedia's signed degree distribution, we see to some extent two peaks around 0. Those may come from a seemingly large subset of users who voted only once or twice positively, or once or twice negatively and did not take part in any other votes.
 
 |                | Epinions |  Slashdot | Wikipedia |
 |:---------------|---------:|----------:|----------:|
