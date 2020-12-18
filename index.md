@@ -18,8 +18,6 @@ Some social medias, though, allow the formation of negative links. In our case, 
 
 ## Sociology ?
 
-<img src="./fig/troll.png"
-     alt="internet troll in action"
-     style="float: left; margin-right: 10px;" />
+<img src="https://raw.githubusercontent.com/richieYT-wan/ADA-p4-data-story/main/figs/troll.png" width="550" />
 Now of course, anybody can vote the way they can. 
 
