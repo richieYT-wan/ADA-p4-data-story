@@ -28,7 +28,7 @@ All datasets are roughly in the same format, i.e. an edgelist with columns `"Fro
 Now of course, anybody can vote the way they can. There have been countless accounts of trolls on the internet, and you should be careful to _not feed them_. Nonetheless, social theories still apply and we may expect trolls to be outliers rather than the norm. In the context of our dataset, trolls may simply refer to people who give negative votes, or links, to everybody, with no apparent reason other. Despite that, some social theories still apply. For example, the theory of balance, proposed by [F. Harary and D. Cartwright](https://en.wikipedia.org/wiki/Social_balance_theory), which considers the way triangles (relationships between 3 nodes) can be signed. This theory suggests that the most common types of triangles are three mutual friends (3 `positive edges`), or two friends with a common enemy (two `negative` and one `positive edges`). Overall, this theory combined with the social nature of humans, which tend to form communities and connect (_as opposed to Trolls who only want despair!_), results in an overall trend to have higher frequencies of `positive edges` vs `negative edges` in a given social network.
 
 You can take our word for it! Or should probably take a glance at the statistics recaps computed for each of the 3 datasets below :
-<p align="center">
+
 |        | Epinions |  Slashdot | Wikipedia |
 |:-------|---------:|----------:|----------:|
 | Nodes  | 131828   |  82140    |    7118   |
@@ -36,8 +36,8 @@ You can take our word for it! Or should probably take a glance at the statistics
 | +edge  |     85.3 |    77.4   |      78.8 |
 | -edge  |     14.7 |    22.6   |      21.2 |
 | Triads | 13317672 |  1508105  |  790532   |
-</p>
 
+UPDATED TEST
 `+edge` and `-edge` show the proportion of positive and negative edges within the network. This Indeed, our networks are all made up of over 77% positive edges. 
 
 But now then, how connected is our network? We can take a look at the average number of edges per node :
