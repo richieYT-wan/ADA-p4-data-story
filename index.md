@@ -18,6 +18,20 @@ Some social medias, though, allow the formation of negative links. In our case, 
 
 ## Sociology ?
 
-<img src="https://raw.githubusercontent.com/richieYT-wan/ADA-p4-data-story/main/figs/troll.png" width="550" />
-Now of course, anybody can vote the way they can. 
+<img src="https://raw.githubusercontent.com/richieYT-wan/ADA-p4-data-story/main/figs/troll.png" width="350" />
+
+Now of course, anybody can vote the way they can. There have been countless accounts of trolls on the internet, and you should be careful to _not feed them_. Nonetheless, social theories still apply and we may expect trolls to be outliers rather than the norm. In the context of our dataset, trolls may simply refer to people who give negative votes, or links, to everybody, with no apparent reason other. Despite that, some social theories still apply. For example, the theory of balance, proposed by [F. Harary and D. Cartwright](https://en.wikipedia.org/wiki/Social_balance_theory), which considers the way triangles (relationships between 3 nodes) can be signed. This theory suggests that the most common types of triangles are three mutual friends (3 `positive edges`), or two friends with a common enemy (two `negative` and one `positive edges`). Overall, this theory combined with the social nature of humans, which tend to form communities and connect (_as opposed to Trolls who only want despair!_), results in an overall trend to have higher frequencies of `positive edges` vs `negative edges` in a given social network.
+
+You can take our word for it, or look at the statistics recaps below for each of the 3 datasets:
+
+|        |         Epinions |         Slashdot |   Wikipedia |
+|:-------|-----------------:|-----------------:|------------:|
+| Nodes  | 131828           |  82140           |      7118   |
+| Edges  | 841372           | 549202           |    103747   |
+| +edge  |     85.3         |     77.4         |        78.8 |
+| -edge  |     14.7         |     22.6         |        21.2 |
+| Triads |      13317672    |      1508105     |    790532   |
+
+	13317672	1508105	790532
+
 
