@@ -2,7 +2,7 @@
 
 Related paper : J. Leskovec, D. Huttenlocher, and J. Kleinberg, ‘Signed networks in social media’, in Proceedings of the 28th international conference on Human factors in computing systems
 
-## Structure in social media, `birds of a feather...`
+## Structure in social media, _**birds of a feather...**_
 
 Most of the current popular social networks only showcase positive links. Think of Facebook, Instagram, Twitter, where one can like, befriend, follow, etc., but never actually "dislike". In real life, though, relationships can be a little more complex. People can dislike each other, leading to some form of *distance*, not only on a personal level but also on a group level. 
 
@@ -80,7 +80,7 @@ Without counting the `sign`, we see that the degree distribution follow a power 
 |Max Deg. (Not)  | 3622     |  2557     | 1167      |
 
 
-## Homophily, `... flock together!`
+## Homophily, _**... flock together!**_
 
 Given the size of Epinions and the nature of the Wikipedia dataset, we decided to focus on Slashdot for this part. 
 
@@ -128,5 +128,5 @@ In the following graph, we too the largest connected component of the total reci
 
 Visually, we notice that there are many more green edges than red edges, as explained above due to the difference in degree of nodes for both sub-networks. On top of that, we see that the positive subset is more densely connected than the negative subset.
 
-In conclusion, birds of a green feather flock together, when birds with sad, red feathers get separated from the pack.
+In conclusion, birds of a green feather flock together, when birds with sad, red feathers get separated from the pack !
 
