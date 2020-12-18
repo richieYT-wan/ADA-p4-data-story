@@ -6,7 +6,7 @@ Related paper : J. Leskovec, D. Huttenlocher, and J. Kleinberg, ‘Signed networ
 
 Most of the current popular social networks only showcase positive links. Think of Facebook, Instagram, Twitter, where one can like, befriend, follow, etc., but never actually "dislike". In real life, though, relationships can be a little more complex. People can dislike each other, leading to some form of *distance*, not only on a personal level but also on a group level. 
 
-The balance between positive and negative links may both play a role in the overall structure of a network. More specifically, negative relationships may split the overall network. Think of a practical example: a group of 10 persons, say `group A`, may share something in common, such as hobbies, interests, way of thinking, etc. They become friends, and thus have `positive edges` between them. On the other hand, another group of friends, say `group B` think differently, and highly dislike `group A`, and thus have `negative edges` towards `group A`. This effectively separates the network into two, as you are less likely to be friend with someone of the other group if your group dislike their group overall. For the sake of the argument, although Twitter, Facebook, etc. does not allow to create negative links, groups with different views are still likely to be separated, for example due to political views, reflecting both their background (geographical as well as classical) and real life social network.
+The balance between positive and negative links may both play a role in the overall structure of a network. More specifically, negative relationships may split the overall network. Think of a practical example: a group of 10 persons, say `group A`, may share something in common, such as hobbies, interests, way of thinking, etc. They become friends, and thus have `positive edges` between them. On the other hand, another group of friends, say `group B` think differently, and highly dislike `group A`, and thus have `negative edges` towards `group A`. This effectively separates the network into two, as you are less likely to be friend with someone of the other group if your group dislike their group overall. For the sake of the argument, although Twitter, Facebook, etc. does not allow to create negative links, groups with different views are still likely to be separated, for example due to political views, reflecting both their background (social class, demographic, etc.) and real life social network (circle of friends).
 
 ## Dataset 
 Some social medias, though, allow the formation of negative links. In our case, we have three datasets coming from [Stanford](https://snap.stanford.edu/data/), collected 2010. These are three social networks where negative edge take different forms: 
@@ -119,9 +119,16 @@ We can check another metric using the average degree of the nearest neighbour :
 <img src="https://raw.githubusercontent.com/richieYT-wan/ADA-p4-data-story/main/figs/knn.png" width="450" />
 </p>
 
-This graph shows the concept of assortativity which is the preference for a node to be linked to another node that has similar behavior. Here, the measure of similarity that we use is the degree of connections of a node. We observe that for the positive subnetwork, the degree correlation between nodes increases, meaning that nodes which connects with a lot of others nodes are connected with nodes that do the same, behave similarly. Thus, the positive network is assortative by degree. Oppositly, for the negative subnetwork, we observe that knn does not increase meaning that there is no degree correlation between these nodes. They don't behave similarly.
+This graph shows the concept of assortativity which is the preference for a node to be linked to another node that has similar behavior. Here, the measure of similarity that we use is the degree of connections of a node. We observe that for the positive subnetwork, the degree correlation between nodes increases, meaning that nodes which connects with a lot of others nodes are connected with nodes that do the same, behave similarly. Thus, the positive network is assortative by degree. On the other hand, for the negative subnetwork, we observe that knn does not increase meaning that there is no degree correlation between these nodes. They don't behave similarly.
 
-In the following graph, we too the largest connected component of the total reciprocal network. Then we chose nodes that have degrees in the top-95 percentile. We marked in green the `positive edges` and in red the `negative edges`.
+|  Assortativity   | Positive |  Negative |
+|:-----------------|---------:|----------:|
+| Slashdot         | 0.2168   |  -0.0224  |
+| Epinions         | 0.1619   |  -0.1137  |
+
+
+
+In the following graph, we took the largest connected component of the total reciprocal network. Then we chose nodes that have degrees in the top-95 percentile. We marked in green the `positive edges` and in red the `negative edges`.
 <p align="center">
 <img src="https://raw.githubusercontent.com/richieYT-wan/ADA-p4-data-story/main/figs/labelled_graph_14.png" width="450" />
 </p>
