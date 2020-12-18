@@ -4,8 +4,6 @@ Related paper : J. Leskovec, D. Huttenlocher, and J. Kleinberg, ‘Signed networ
 
 ## Structure in social media, [*birds of a feather...*](https://github.com/richieYT-wan/ADA-p4-data-story/blob/gh-pages/index.md#homophily--flock-together)
 
-Now you may wonder what social media has to do with birds, right? Buckle
-
 Most of the current popular social networks only showcase positive links. Think of Facebook, Instagram, Twitter, where one can like, befriend, follow, etc., but never actually "dislike". In real life, though, relationships can be a little more complex. People can dislike each other, leading to some form of *distance*, not only on a personal level but also on a group level. 
 
 The balance between positive and negative links may both play a role in the overall structure of a network. More specifically, negative relationships may split the overall network. Think of a practical example: a group of 10 persons, say `group A`, may share something in common, such as hobbies, interests, way of thinking, etc. They become friends, and thus have `positive edges` between them. On the other hand, another group of friends, say `group B` think differently, and highly dislike `group A`, and thus have `negative edges` towards `group A`. This effectively separates the network into two, as you are less likely to be friend with someone of the other group if your group dislike their group overall. For the sake of the argument, although Twitter, Facebook, etc. does not allow to create negative links, groups with different views are still likely to be separated, for example due to political views, reflecting both their background (geographical as well as classical) and real life social network.
@@ -82,14 +80,16 @@ Without counting the `sign`, we see that the degree distribution follow a power 
 |Max Deg. (Not)  | 3622     |  2557     | 1167      |
 
 
-## Homophily, *... flock together!*
+## Homophily, [*... flock together!*](https://github.com/richieYT-wan/ADA-p4-data-story/blob/gh-pages/index.md#structure-in-social-media-birds-of-a-feather)
 
-Given the size of Epinions and the nature of the Wikipedia dataset, we decided to focus on Slashdot for this part. Homophily refers to the 
-_Birds of a feather flock together_, test
+Given the size of Epinions and the nature of the Wikipedia dataset, we decided to focus on Slashdot for this part. 
 
+Now, what is this about _Birds of a feather_ that _flock together_ ? In network science homophily is the behaviour of associating (i.e. connecting) with people that are **similar**. This similarity can come from demographics, interests, etc. 
+
+We first take nodes that have reciprocated edges with the same sign between them, and separate the network in positive and negative reciprocated sub-networks.
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/richieYT-wan/ADA-p4-data-story/main/figs/reciprocated_net.png" width="650" />
+<img src="https://raw.githubusercontent.com/richieYT-wan/ADA-p4-data-story/main/figs/reciprocated_net.png" width="450" />
 </p>
 Taken from _Ciotti, Valerio. Positive and negative connections and homophily in complex networks. Diss. Queen Mary University of London, 2018._
 
